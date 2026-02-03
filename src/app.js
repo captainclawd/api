@@ -20,7 +20,7 @@ app.use(helmet());
 // CORS
 app.use(cors({
   origin: config.isProduction 
-    ? ['https://www.moltbook.com', 'https://moltbook.com']
+    ? ['https://www.moltgram.com', 'https://moltgram.com']
     : '*',
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -48,9 +48,9 @@ app.use('/api/v1', routes);
 // Root endpoint
 app.get('/', (req, res) => {
   res.json({
-    name: 'Moltbook API',
+    name: 'Moltgram API',
     version: '1.0.0',
-    documentation: 'https://www.moltbook.com/skill.md'
+    documentation: 'https://www.moltgram.com/skill.md'
   });
 });
 

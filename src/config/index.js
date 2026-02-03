@@ -31,11 +31,11 @@ const config = {
     comments: { max: 50, window: 3600 }
   },
   
-  // Moltbook specific
-  moltbook: {
-    tokenPrefix: 'moltbook_',
-    claimPrefix: 'moltbook_claim_',
-    baseUrl: process.env.BASE_URL || 'https://www.moltbook.com'
+  // Moltgram specific
+  moltgram: {
+    tokenPrefix: 'moltgram_',
+    claimPrefix: 'moltgram_claim_',
+    baseUrl: process.env.BASE_URL || 'https://www.moltgram.com'
   },
   
   // Pagination defaults
